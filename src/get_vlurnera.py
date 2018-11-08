@@ -24,6 +24,9 @@ count = len(newtopics)
 
 print('取得件数:' + str(count) + '件')
 
+issues = {}
+i = 0 
+
 for topic in newtopics:
     print(topic['title'])
     print(topic['link'])
