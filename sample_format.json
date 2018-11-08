@@ -1,0 +1,68 @@
+getAlertList
+# https://jvndb.jvn.jp/myjvn?method=getAlertList&feed=hnd&ft=json 
+
+{
+      "title": "Adobe Flash Player に関するセキュリティ情報 (2018年1月10日 公開)",
+      "id": "MYJVN-ALT-2018-0004",
+      "link": "",
+      "summary": "",
+      "category": {
+        "term": "Low",
+        "label": "注意"
+      },
+      "update": "2018-02-16T12:10:09+09:00",
+      "published": "2018-02-16T12:10:09+09:00",
+      "sec:items": [{
+        "sec:item": {
+          "sec:title": "Adobe Flash Player の脆弱性対策について(APSB18-01)(CVE-2018-4871)",
+          "sec:identifier": "MYJVN-ALT-2018-0004-0001",
+          "sec:link": "https://www.ipa.go.jp/security/ciadr/vul/20180110-adobeflashplayer.html",
+          "sec:published": "2018-01-10T00:00:00+09:00",
+          "sec:updated": "2018-02-16T12:10:09+09:00",
+          "sec:author": {
+            "value": "IPA"
+          }
+        },
+        "sec:item": {
+          "sec:title": "Security updates available for Flash Player | APSB18-01",
+          "sec:identifier": "MYJVN-ALT-2018-0004-0002",
+          "sec:link": "https://helpx.adobe.com/security/products/flash-player/apsb18-01.html",
+          "sec:published": "2018-01-10T00:00:00+09:00",
+          "sec:updated": "2018-02-16T12:10:09+09:00",
+          "sec:author": {
+            "value": "アドビシステムズ"
+          }
+        }
+      }]
+    }
+
+
+
+
+getVulnOverviewList
+https://jvndb.jvn.jp/myjvn?method=getVulnOverviewList&feed=hnd
+
+
+  <item rdf:about="https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008951.html">
+    <title>Apache Tomcat JK mod_jk Connector にパストラバーサルの脆弱性</title>
+    <link>https: //jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008951.html</link>
+    <description>Apache Tomcat JK mod_jk Connector には、パストラバーサルの脆弱性が存在します。  Apache Tomcat JK mod_jk Connector は、受け取った URI を正規化して worker プロセスとの対応付けを行います。この正規化処理の部分に問題があり、細工された URI を適切に処理できない場合があります。  この問題は、CVE-2018-1323 の問題と重複する部分もありますが、同一の問題ではありません。</description>
+    <dc:creator>Information-technology Promotion Agency, Japan</dc:creator>
+    <sec:identifier>JVNDB-2018-008951</sec:identifier>
+    <sec:references source="CVE" id="CVE-2018-11759">https: //cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-11759</sec:references>
+    <sec:references source="JVN" id="JVNVU#99875465">https: //jvn.jp/vu/JVNVU99875465/</sec:references>
+    <sec:cpe version="2.2" vendor="Apache Software Foundation
+    " product="Apache Tomcat JK Connector">cpe:/a:apache:tomcat_jk_connector</sec:cpe>
+    <dc:date>2018-11-02T14: 35: 11+09: 00</dc:date>
+    <dcterms:issued>2018-11-02T14: 35: 11+09: 00</dcterms:issued>
+    <dcterms:modified>2018-11-02T14: 35: 11+09: 00</dcterms:modified>
+  </item>
+  <status:Status version="3.3" method="getVulnOverviewList" lang="ja" retCd="0" retMax="50" errCd="" errMsg="" totalRes="1" totalResRet="1" firstRes="1" feed="hnd" keyword="%22Apache%22"/>
+</rdf:RDF>
+
+
+
+
+
+getStatistics
+https://jvndb.jvn.jp/myjvn?method=getStatistics&feed=hnd
