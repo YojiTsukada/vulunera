@@ -1,17 +1,32 @@
 {
     "１": {
 	"title": "自己暗号化ドライブ製品における複数の脆弱性",
-        "link": "https: //jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-009133.html",
+        "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-009133.html",
 	    "description": "ATA セキュリティモードや TCG OPAL 規格を実装した自己暗号化ドライブ製品には複数の脆弱性が存在し、攻撃者によって暗号化されたドライブの内容を復号される可能性があります。  CVE-2018-12037 ユーザが設定したパスワードと、データ暗号化に使用される暗号鍵の間に、暗号学的な関連付けがなされていません。そのため、ユーザ設定のパスワードを知らずとも、データの復号が可能となります。  CVE-2018-12038 データ暗号化鍵に関する情報が、ウェアレベリング機能を持った記憶領域に記録されています。 ウェアレベリング機能を持ったデバイスでは、データがアップデートされると、物理的に異なる位置に書き込みがなされるため、元のデータが完全には削除されない可能性があります。その結果、データ暗号鍵を新しいパスワードでアップデートした後も、保護されていない、もしくは古いパスワードで保護された以前のデータ暗号鍵にアクセスされる可能性があります。"
     },
     "2": {
         "title": "LogonTracer に複数の脆弱性",
-        "link": "https: //jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-009127.html",
+        "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-009127.html",
         "description": "一般社団法人JPCERTコーディネーションセンターが提供する LogonTracer は、イベントログの分析をサポートするツールです。 LogonTracer には、次の複数の脆弱性が存在します。   * クロスサイトスクリプティング (CWE-79) - CVE-2018-16165    CVSS v3 CVSS: 3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N 基本値: 6.1    CVSS v2 AV:N/AC:M/Au:N/C:N/I:P/A:N 基本値: 4.3  * XXE (XML External Entity) インジェクション (CWE-611) - CVE-2018-16166    CVSS v3 CVSS: 3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:L 基本値: 6.1    CVSS v2 AV:N/AC:L/Au:N/C:P/I:N/A:N 基本値: 5.0  * OS コマンドインジェクション (CWE-78) - CVE-2018-16167    CVSS v3 CVSS: 3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H 基本値: 10.0   CVSS v2 AV:N/AC:L/Au:N/C:P/I:P/A:P 基本値: 7.5  * コードインジェクション (CWE-94) - CVE-2018-16168    CVSS v3 CVSS: 3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H 基本値: 10.0    CVSS v2 AV:N/AC:L/Au:N/C:P/I:P/A:P 基本値: 7.5  この脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が修正対応を行い、対策版を公表しました。 報告者: 株式会社神戸デジタル・ラボ　馬場 将次 氏"
     },
     "3": {
         "title": "Cisco ASA および FTD の SIP インスペクション機能におけるサービス運用妨害 (DoS) の脆弱性",
-        "link": "https: //jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008979.html",
+        "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008979.html",
         "description": "Cisco Adaptive Security Appliance (ASA) ソフトウェアおよび Cisco Firepower Threat Defense (FTD) ソフトウェアの SIP インスペクション機能には、SIP トラフィックの解析処理に問題があり、CPU 負荷が高くなってサービス運用妨害 (DoS) 状態になる可能性があります。"
+    },
+    "4": {
+        "title": "Cisco ASA および FTD の SIP インスペクション機能におけるサービス運用妨害 (DoS) の脆弱性",
+        "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-008979.html",
+        "description": "Cisco Adaptive Security Appliance (ASA) ソフトウェアおよび Cisco Firepower Threat Defense (FTD) ソフトウェアの SIP インスペクション機能には、SIP トラフィックの解析処理に問題があり、CPU 負荷が高くなってサービス運用妨害 (DoS) 状態になる可能性があります。"
+    },
+    "5": {
+        "title": "LogonTracer に複数の脆弱性",
+        "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-009127.html",
+        "description": "一般社団法人JPCERTコーディネーションセンターが提供する LogonTracer は、イベントログの分析をサポートするツールです。 LogonTracer には、次の複数の脆弱性が存在します。   * クロスサイトスクリプティング (CWE-79) - CVE-2018-16165    CVSS v3 CVSS: 3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N 基本値: 6.1    CVSS v2 AV:N/AC:M/Au:N/C:N/I:P/A:N 基本値: 4.3  * XXE (XML External Entity) インジェクション (CWE-611) - CVE-2018-16166    CVSS v3 CVSS: 3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:L 基本値: 6.1    CVSS v2 AV:N/AC:L/Au:N/C:P/I:N/A:N 基本値: 5.0  * OS コマンドインジェクション (CWE-78) - CVE-2018-16167    CVSS v3 CVSS: 3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H 基本値: 10.0   CVSS v2 AV:N/AC:L/Au:N/C:P/I:P/A:P 基本値: 7.5  * コードインジェクション (CWE-94) - CVE-2018-16168    CVSS v3 CVSS: 3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H 基本値: 10.0    CVSS v2 AV:N/AC:L/Au:N/C:P/I:P/A:P 基本値: 7.5  この脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が修正対応を行い、対策版を公表しました。 報告者: 株式会社神戸デジタル・ラボ　馬場 将次 氏"
+    },
+    "6": {
+        "title": "LogonTracer に複数の脆弱性",
+        "link": "https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-009127.html",
+        "description": "一般社団法人JPCERTコーディネーションセンターが提供する LogonTracer は、イベントログの分析をサポートするツールです。 LogonTracer には、次の複数の脆弱性が存在します。   * クロスサイトスクリプティング (CWE-79) - CVE-2018-16165    CVSS v3 CVSS: 3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N 基本値: 6.1    CVSS v2 AV:N/AC:M/Au:N/C:N/I:P/A:N 基本値: 4.3  * XXE (XML External Entity) インジェクション (CWE-611) - CVE-2018-16166    CVSS v3 CVSS: 3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:L 基本値: 6.1    CVSS v2 AV:N/AC:L/Au:N/C:P/I:N/A:N 基本値: 5.0  * OS コマンドインジェクション (CWE-78) - CVE-2018-16167    CVSS v3 CVSS: 3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H 基本値: 10.0   CVSS v2 AV:N/AC:L/Au:N/C:P/I:P/A:P 基本値: 7.5  * コードインジェクション (CWE-94) - CVE-2018-16168    CVSS v3 CVSS: 3.0/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H 基本値: 10.0    CVSS v2 AV:N/AC:L/Au:N/C:P/I:P/A:P 基本値: 7.5  この脆弱性情報は、下記の方が JPCERT/CC に報告し、JPCERT/CC が修正対応を行い、対策版を公表しました。 報告者: 株式会社神戸デジタル・ラボ　馬場 将次 氏"
     }
 }
