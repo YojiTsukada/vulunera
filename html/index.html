@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>V    ulunerabiluty Check</title>
+    <title>Vulunerabiluty Check</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/offcanvas/">
 
 <!-- Latest compiled and minified CSS -->
@@ -31,13 +31,12 @@
                     <p>This is to check new vulunerabiluty incidents. You will be able to address the security issue so quickly.</p>
                 </div>
                 <div id="app">
-                    <p>{{info}}件</p>
                     <div class="row">                        
                         <div v-for="topic in info">
                             <div class="col-6 col-lg-4">
-                                <h2>{{ topic.title }}</h2>
-                                <p>{{ topic.description }} </p>
-                                <p><a class="btn btn-secondary" v-bind:href="topic.link" role="button">View details &raquo;</a></p>
+                                <h3>{{ topic.title |title_tranc}}</h3>
+                                <p>{{ topic.description | text_tranc}}</p>
+                                <p><a class="btn btn-secondary" v-bind:href="topic.link" target="_brank" role="button">View details &raquo;</a></p>
                             </div>
                         </div>
                     </div>
