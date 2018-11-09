@@ -28,8 +28,12 @@ issues = {}
 i = 0 
 
 for topic in newtopics:
-    print(topic['title'])
-    print(topic['link'])
-    print(topic['description'])
-    #print(topic['sec:references'][0]['@id'])
-    print('-------------------------------------------------------')
+    issues[i] = {}
+    issues[i]['title'] = topic['title']
+    issues[i]['link'] = topic['link']
+    issues[i]['description'] = topic['description']
+    i+=1
+
+
+print(json.dumps(issues,ensure_ascii=False))
+
