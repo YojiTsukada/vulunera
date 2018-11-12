@@ -36,4 +36,3 @@ for topic in newtopics:
 
 
 print(json.dumps(issues,ensure_ascii=False))
-
