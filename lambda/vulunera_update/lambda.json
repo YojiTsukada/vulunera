@@ -1,0 +1,10 @@
+{
+    "name": "update_vulunera",
+    "description": "vulunerability check tool for lambda.",
+    "region": "us-east-1",
+    "handler": "lambda_funtion.lambda_handler",
+    "role": "arn:aws:iam::421733858730:role/api-gateway-lamba-exec-role",
+    "timeout": 300,
+    "memory": 128
+}
+
