@@ -3,3 +3,6 @@
 
 # for Mac
 .DS_Store
+
+# for lambda
+lambda/vulunera_update/lambda_function.zip

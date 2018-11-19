@@ -6,7 +6,7 @@ var vm = new Vue({
             }
         },
         mounted() {
-            var getURL = "sample/sample.json"
+            var getURL = "https://6a3r6dm5pk.execute-api.us-east-1.amazonaws.com/develop/update"
             axios.get(getURL)
                 .then(response => (this.info = response.data))
         },

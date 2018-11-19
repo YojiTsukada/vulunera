@@ -31,19 +31,20 @@
                     <p>This is to check new vulunerabiluty incidents. You will be able to address the security issue so quickly.</p>
                 </div>
                 <div id="app">
-                    <div class="msg">
+                    <div class="row">                        
                         <div v-for="topic in info">
-                        <div class="media-body">
-                                <small class="pull-right time"><i class="fa fa-clock-o"></i><a class="btn btn-secondary" v-bind:href="topic.link" target="_brank" role="button">View details</a></small>
-                                <h5 class="media-heading">{{ topic.title }}</h5>
-                                <small class="col-lg-10">{{ topic.description }}</small>     
+                            <div class="col-6 col-lg-4">
+                                <h3>{{ topic.title}}</h3>
+                                <p>{{ topic.description | text_tranc}}</p>
+                                <p><a class="btn btn-secondary" v-bind:href="topic.link" target="_brank" role="button">View details &raquo;</a></p>
                             </div>
-                        <hr>
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
+        </div>
+
+        <hr>
         <footer>
             <p>&copy; Y.J</p>
         </footer>

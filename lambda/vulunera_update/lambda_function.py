@@ -15,8 +15,6 @@ def lambda_handler(event, context):
     # Xml to Dictionary
     dict = xmltodict.parse(XmlData)
 
-    #result = json.dumps(dict,indent=2,ensure_ascii=False)
-
     # Create Lists
     newtopics = dict['rdf:RDF']['item']
 
@@ -37,4 +35,4 @@ def lambda_handler(event, context):
 
 
     #return json.dumps(issues,ensure_ascii=False)
-    return issues
+    return json.dumps(issues,ensure_ascii=False)
